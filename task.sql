@@ -7,5 +7,4 @@ CREATE TABLE tasks (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     assigned_user INTEGER REFERENCES users(user_id)
 );
-
 CREATE INDEX idx_tasks_status ON tasks (status);
